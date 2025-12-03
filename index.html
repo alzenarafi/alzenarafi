@@ -1,14 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Ini Contoh </h1>
-    <h2>Website Alzena</h2>
-    <h1>Syaa adalah Hanafi</h1>
-    <h1>Saya adalah Alzena</h1>
-</body>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mineverse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">Mineverse</h1>
+        <nav class="space-x-4">
+          <a href="#" class="text-gray-600 hover:text-blue-600">Beranda</a>
+          <a href="#tentang" class="text-gray-600 hover:text-blue-600">Tentang</a>
+          <a href="#layanan" class="text-gray-600 hover:text-blue-600">Layanan</a>
+          <a href="#kontak" class="text-gray-600 hover:text-blue-600">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20 text-center">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4">Solusi Terbaik untuk Bisnis Anda</h2>
+        <p class="text-lg mb-6">Kami menghadirkan layanan profesional dan inovatif untuk mendukung pertumbuhan perusahaan Anda.</p>
+        <a href="#kontak" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Hubungi Kami</a>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-gray-100">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h3>
+        <p class="text-gray-600 text-lg">NamaPerusahaan adalah perusahaan teknologi yang berfokus pada solusi digital modern. Dengan tim yang berpengalaman, kami siap membantu bisnis Anda berkembang di era digital.</p>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Layanan Kami</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Pengembangan Web</h4>
+            <p class="text-gray-600">Membuat website yang responsif, modern, dan sesuai kebutuhan bisnis Anda.</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Aplikasi Mobile</h4>
+            <p class="text-gray-600">Bangun aplikasi iOS & Android yang efisien dan user-friendly.</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Digital Marketing</h4>
+            <p class="text-gray-600">Strategi pemasaran digital yang efektif untuk menjangkau lebih banyak pelanggan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 bg-blue-50">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">Hubungi Kami</h3>
+        <p class="text-gray-600 mb-6">Tertarik bekerja sama atau punya pertanyaan? Kirimkan email ke <a href="mailto:info@namaperusahaan.com" class="text-blue-600 font-medium">info@namaperusahaan.com</a></p>
+        <a href="mailto:info@namaperusahaan.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Kirim Email</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6 mt-10">
+      <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+        © 2025 NamaPerusahaan. Semua Hak Dilindungi.
+      </div>
+    </footer>
+
+  </body>
 </html>
