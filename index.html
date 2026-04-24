@@ -37,7 +37,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: radial-gradient(circle at top right, rgba(37, 0, 0, 0.178), transparent),
+            background: radial-gradient(circle at top right, rgba(148, 0, 0, 0.178), transparent),
                         radial-gradient(circle at bottom left, rgba(255, 0, 0, 0.253), transparent);
             padding: 2rem;
         }
@@ -117,10 +117,14 @@
 
         .project-image {
             width: 100%;
-            height: 220px;
-            background-color: #1e2329; /* Fallback color */
-            object-fit: cover;
+            /* Rasio 4:5 (Lebar:Tinggi) */
+            aspect-ratio: 4 / 5; 
+            background-color: #1e2329;
+            /* Ini penting supaya gambar tidak gepeng tapi terpotong rapi */
+            object-fit: cover; 
+            object-position: center;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: block;
         }
 
         .project-info {
@@ -169,61 +173,54 @@
         </section>
 
         <section>
-            <h2>Graphic Design</h2>
+            <h2>Projects</h2>
             <div class="project-grid">
                 
                 <div class="project-card">
-                    <img src="sochi-design.jpg" alt="The Cold Battle in Sochi" class="project-image">
+                    <img src="Alzena RB Poster F1 Pedia.png" alt="The Cold Battle in Sochi" class="project-image">
                     <div class="project-info">
-                        <h3>The Cold Battle in Sochi</h3>
-                        <p>Eksperimen desain poster bertema F1 dengan sentuhan surealisme budaya Rusia.</p>
+                        <h3>F1 Redbull Poster</h3>
+                        <p>Desain poster mengenai ajang balapan F1 yang akan memulai musim terbarunya.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="mineverse-ui.jpg" alt="Mineverse Management" class="project-image">
+                    <img src="AlzenaRafi.png" alt="Mineverse Management" class="project-image">
                     <div class="project-info">
-                        <h3>Mineverse Community</h3>
-                        <p>Branding dan aset visual untuk ekosistem server Minecraft yang dinamis.</p>
+                        <h3>Eid Mubarak</h3>
+                        <p>Desain poster untuk merayakan hari raya Idul Fitri.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="podcast-cover.jpg" alt="Undermine Podcast" class="project-image">
+                    <img src="ALZENAA.png" alt="Undermine Podcast" class="project-image">
                     <div class="project-info">
-                        <h3>Undermine Podcast</h3>
-                        <p>Konsep identitas visual dan perencanaan konten untuk media kritik roleplay.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <h2>Story Content</h2>
-            <div class="project-grid">
-                
-                <div class="project-card">
-                    <img src="sochi-design.jpg" alt="The Cold Battle in Sochi" class="project-image">
-                    <div class="project-info">
-                        <h3>The Cold Battle in Sochi</h3>
-                        <p>Eksperimen desain poster bertema F1 dengan sentuhan surealisme budaya Rusia.</p>
+                        <h3>Keselamatan Mudik</h3>
+                        <p>Desain poster kampanye untuk mengingatkan pentingnya keselamatan saat mudik.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="mineverse-ui.jpg" alt="Mineverse Management" class="project-image">
+                    <img src="Dalgona Coffe.png" alt="Undermine Podcast" class="project-image">
                     <div class="project-info">
-                        <h3>Mineverse Community</h3>
-                        <p>Branding dan aset visual untuk ekosistem server Minecraft yang dinamis.</p>
+                        <h3>Dalgona Coffee</h3>
+                        <p>Desain poster untuk promosi minuman Dalgona Coffee.</p>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="podcast-cover.jpg" alt="Undermine Podcast" class="project-image">
+                    <img src="Menu Cireng Kuah Keju SMK 11.png" alt="Undermine Podcast" class="project-image">
                     <div class="project-info">
-                        <h3>Undermine Podcast</h3>
-                        <p>Konsep identitas visual dan perencanaan konten untuk media kritik roleplay.</p>
+                        <h3>Cireng kuah keju</h3>
+                        <p>Desain poster untuk promosi makanan Cireng Kuah Keju.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="HowDoYouLiveTheMoviePosters.png" alt="The Cold Battle in Sochi" class="project-image">
+                    <div class="project-info">
+                        <h3>How Do You Live</h3>
+                        <p>Sebuah film Minecraft yang tayang eksklusif di channel YouTube Mineverse.</p>
                     </div>
                 </div>
 
