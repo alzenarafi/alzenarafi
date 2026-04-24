@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Muhamad Alzena Rafi</title>
+    <style>
+        :root {
+            --bg-dark: #0b0e11;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-color: #FA0905;
+            --accent-gradient: linear-gradient(135deg, #FA0905, #5e0202);
+            --text-main: #eaecef;
+            --text-dim: #848e9c;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem 5rem; }
+
+        /* Header Skill */
+        .skill-header {
+            text-align: center;
+            padding: 5rem 0 3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 3rem;
+        }
+        .skill-header h1 {
+            font-size: 3rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        .skill-header p { color: var(--text-dim); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+
+        /* Grid Gambar 4:5 (Dari chat sebelumnya) */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(250, 9, 5, 0.2);
+        }
+        .project-image {
+            width: 100%;
+            aspect-ratio: 4 / 5; 
+            background-color: #1e2329;
+            object-fit: cover; 
+            object-position: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .project-card:hover .project-image { transform: scale(1.05); }
+        .project-info { padding: 1.5rem; position: relative; z-index: 2; background: var(--card-bg); }
+        .project-info h3 { margin-bottom: 0.5rem; color: var(--accent-color); }
+        .project-info p { font-size: 0.9rem; color: var(--text-dim); }
+
+        /* Tombol Kembali */
+        .btn-back-container { text-align: center; margin-top: 4rem; }
+        .btn-back {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .btn-back:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <header class="skill-header">
+        <div class="container">
+            <h1>Desain Grafis & Karya Visual</h1>
+            <p>Kumpulan hasil karya yang memadukan estetika visual dengan teknik desain modern. Setiap desain dibuat dengan riset mendalam untuk menyampaikan pesan yang tepat kepada audiens.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <img src="Alzena RB Poster F1 Pedia.png" alt="F1 Redbull" class="project-image">
+                <div class="project-info">
+                    <h3>F1 Redbull Poster</h3>
+                    <p>Desain poster mengenai ajang balapan F1 yang akan memulai musim terbarunya.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="HowDoYouLiveTheMoviePosters.png" alt="How Do You Live" class="project-image">
+                <div class="project-info">
+                    <h3>How Do You Live</h3>
+                    <p>Sebuah film Minecraft yang tayang eksklusif di channel YouTube Mineverse.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Menu Cireng Kuah Keju SMK 11.png" alt="Cireng Kuah Keju" class="project-image">
+                <div class="project-info">
+                    <h3>Cireng Kuah Keju</h3>
+                    <p>Desain poster untuk promosi makanan Cireng Kuah Keju.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-back-container">
+            <a href="alzena.html" class="btn-back">⬅ Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+
+</body>
+</html>
