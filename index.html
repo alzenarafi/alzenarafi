@@ -120,6 +120,20 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
+        .exp-card {
+        background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(0,0,0,0.2));
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-left: 4px solid var(--accent-color);
+        padding: 2.5rem;
+        border-radius: 16px;
+        margin-bottom: 2rem; /* Tambahkan ini buat ngasih jarak antar card */
+        }
+
+/* Tambahkan juga ini supaya card paling bawah nggak punya sisa jarak berlebih */
+.exp-card:last-child {
+    margin-bottom: 0;
+}
+
         /* --- HERO SECTION --- */
         .hero {
             min-height: 100vh;
@@ -174,11 +188,36 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             padding: 2.5rem;
             border-radius: 20px;
+            /* Tambahan agar kontennya ke tengah */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         .skill-card:hover {
             transform: translateY(-12px);
             border-color: var(--accent-color);
             box-shadow: 0 15px 30px rgba(250, 9, 5, 0.2);
+        }
+        .skill-card h3 { 
+            font-size: 1.5rem; 
+            margin-bottom: 5px; /* Margin dikurangi karena deskripsi hilang */
+        }
+        
+        /* Class baru untuk logo 1:1 */
+        .profession-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain; /* Memastikan logo tidak terpotong */
+            background: rgba(0, 0, 0, 0.3); /* Latar belakang gelap agar logo menonjol */
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .skill-card:hover .profession-logo {
+            transform: scale(1.1) rotate(5deg); /* Efek sedikit membesar dan miring saat di-hover */
         }
         .skill-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
         .skill-card p { color: var(--text-dim); margin-bottom: 25px; }
@@ -257,7 +296,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills">Profession</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -269,9 +308,9 @@
             <div class="hero-text">
                 <p class="hero-label">PORTFOLIO</p>
                 <h1 class="gradient-text">Muhamad Alzena Rafi</h1>
-                <h3>Desainer Grafis &bull; Storyteller &bull; Konten Kreator</h3>
-                <p>Menciptakan karya visual yang estetis dan merangkai cerita bermakna dalam setiap konten digital yang saya buat.</p>
-                <a href="#about" class="btn">About Us</a>
+                <h3>Graphic Designer&bull; Storyteller &bull; Entrepreneur</h3>
+                <p>Creating visually appealing work and crafting memorable and meaningful stories in every piece of digital content I create.</p>
+                <a href="#about" class="btn">About Me</a>
             </div>
             <div class="hero-image-box">
                 <img src="foto alzena.png" alt="Muhamad Alzena Rafi" class="hero-image">
@@ -282,31 +321,35 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-card">
-                <h2 class="section-title">About Us</h2>
-                <p>Saya adalah seorang individu yang antusias berkarier di industri kreatif. Saat ini, saya aktif bergerak sebagai <strong>Graphic Designer Freelance</strong>. Selain itu, saya juga seorang <strong>Konten Kreator sekaligus Storyteller</strong> yang suka menambahkan unsur cerita ke dalam setiap konten yang saya buat. Bagi saya, konten yang kuat adalah konten yang tidak hanya menarik secara visual, tapi juga mampu menyampaikan sebuah pesan atau cerita.</p>
+                <h2 class="section-title">About Me</h2>
+                <p><strong>I  am an enthusiastic professional in the creative industry.</strong> Currently, I work as a <strong>Freelance Graphic Designer</strong>. In addition, I am also a <strong>content creator and storyteller</strong> who enjoys incorporating storytelling elements into every piece of content I create. For me, strong content is content that is not only visually appealing but also conveys a message or a story.</p>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills-section">
+   <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title">My Profession</h2>
             <div class="skills-grid">
+                
                 <div class="skill-card">
-                    <h3>Desainer Grafis</h3>
-                    <p>Merancang identitas visual, poster, dan aset grafis yang menarik dengan fokus pada estetika dan fungsi.</p>
+                    <img src="designer.png" alt="Logo Desainer" class="profession-logo">
+                    <h3>Graphic Designer</h3>
                     <a href="projects.html" class="btn">View Project</a>
                 </div>
+
                 <div class="skill-card">
+                    <img src="storyteller.png" alt="Logo Storyteller" class="profession-logo">
                     <h3>Storyteller</h3>
-                    <p>Menyusun narasi dan alur cerita yang kuat untuk menghidupkan setiap karya visual yang saya buat.</p>
                     <a href="projects.html" class="btn">View Project</a>
                 </div>
+
                 <div class="skill-card">
-                    <h3>Konten Kreator</h3>
-                    <p>Memproduksi konten digital yang interaktif dan relevan guna membangun engagement audiens yang kuat.</p>
+                    <img src="enterpreneur.png" alt="Logo Mineverse" class="profession-logo">
+                    <h3>Entrepreneur</h3>
                     <a href="projects.html" class="btn">View Project</a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -316,17 +359,47 @@
             <h2 class="section-title">Experience</h2>
             <div class="exp-card">
                 <div class="exp-header">
-                    <div class="exp-role">Freelance Creative & Designer</div>
-                    <div class="exp-date">2023 - Present</div>
+                    <div class="exp-role">Founder & Chief Executive Officer</div>
+                    <div class="exp-date">2024 - Present</div>
                 </div>
-                <div class="exp-company">Independent / F1Pedia / Mineverse</div>
-                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">Mengelola dan memproduksi berbagai kebutuhan visual dan konten digital untuk klien dan komunitas secara profesional.</p>
-                <h4 style="margin-bottom: 10px;">Key Milestones:</h4>
+                <div class="exp-company">Mineverse</div>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">Building Mineverse as a creative platform for its members who want to become Minecraft content creators, so they can provide entertainment, information, and education to their audience.</p>
+                <h4 style="margin-bottom: 10px;">Achievement:</h4>
                 <ul class="exp-milestones">
-                    <li>Mendesain puluhan poster promosi komersial dan event besar.</li>
-                    <li>Mengembangkan narasi cerita (Lore) untuk komunitas Mineverse.</li>
-                    <li>Meningkatkan engagement melalui strategi konten storytelling.</li>
+                    <li>5000+ Subscribers on Youtube Platform.</li>
+                    <li>8000+ Followers on Instagram Platform.</li>
+                    <li>We have partnered with over 20 companies and other individuals</li>
+                    <li>1 Million Views Total on multiplatform.</li>
                 </ul>
+                  
+            </div>
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-role">Founder & Freelancer Graphic Designer</div>
+                    <div class="exp-date">2025 - Present</div>
+                </div>
+                <div class="exp-company">Genoxy Stuidos</div>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">Providing graphic design services. Specializing in professional visual identity, including logos, posters, banners, and social media design. Focused on aesthetically pleasing designs with high market value. </p>
+                <h4 style="margin-bottom: 10px;">Achievement:</h4>
+                <ul class="exp-milestones">
+                    <li>20+ people have placed orders and given positive feedback</li>
+                    <li>Trusted by 5+ communities and companies to design their social media</li>
+                </ul>
+
+                </div>
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-role">President of Mineverse Studios & Chief Creative Officer</div>
+                    <div class="exp-date">2026 - Present</div>
+                </div>
+                <div class="exp-company">Mineverse Studios</div>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">I am fully responsible, as the lead architect, for designing, directing, and aligning the creative vision for the entire series of films and TV shows produced.</p>
+                <h4 style="margin-bottom: 10px;">Achievement:</h4>
+                <ul class="exp-milestones">
+                    <li>Direct & Produced 1 Minecraft Films.</li>
+                    <li>Creating a cinematic universe that includes several Minecraft Films</li>
+                </ul>
+                
             </div>
         </div>
     </section>
@@ -353,22 +426,22 @@
                     <div class="contact-grid-modern">
                         <a href="mailto:emailkamu@gmail.com" class="contact-item">
                             <span>Email Address</span>
-                            <h4>emailkamu@gmail.com</h4>
+                            <h4>alzenarafi368@gmail.com</h4>
                         </a>
                         <a href="#" class="contact-item">
                             <span>Instagram</span>
-                            <h4>@muhamadalzenarafi</h4>
+                            <h4>@alzenarafii</h4>
                         </a>
                         <a href="#" class="contact-item">
                             <span>Discord</span>
-                            <h4>Mineverse Admin</h4>
+                            <h4>alzenarafi</h4>
                         </a>
                         <div class="contact-item">
                             <span>Location</span>
                             <h4>Indonesia, Remote</h4>
                         </div>
                     </div>
-                    <a href="#" class="btn" style="width: 100%; margin-top: 1.5rem;">Download My CV</a>
+                    <a href="#" class="btn" style="width: 100%; margin-top: 1.5rem;">Back to the top</a>
                 </div>
             </div>
         </div>
